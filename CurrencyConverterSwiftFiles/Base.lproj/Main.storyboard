@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyConverterNoTables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tum-l2-a2r">
+                                <rect key="frame" x="0.0" y="44" width="375" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jLd-D5-2Jc">
+                                        <rect key="frame" x="24" y="10" width="327" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="US" translatesAutoresizingMaskIntoConstraints="NO" id="sQh-yE-zHH">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sQh-yE-zHH" secondAttribute="height" multiplier="1:1" id="W73-yE-VNN"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovS-M8-a3N">
+                                                <rect key="frame" x="112" y="35" width="103" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYP-NI-ybH" userLabel="USDAmount" customClass="CurrencyTextField" customModule="CurrencyConverterNoTables" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="35" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="2P9-3W-Bkm"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.3009952910958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="4J3-qB-TC1"/>
+                                    <constraint firstItem="jLd-D5-2Jc" firstAttribute="leading" secondItem="tum-l2-a2r" secondAttribute="leading" constant="24" id="6Ga-nW-hG3"/>
+                                    <constraint firstItem="jLd-D5-2Jc" firstAttribute="centerY" secondItem="tum-l2-a2r" secondAttribute="centerY" id="9v8-Tq-0Na"/>
+                                    <constraint firstAttribute="trailing" secondItem="jLd-D5-2Jc" secondAttribute="trailing" constant="24" id="HBu-ni-11L"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e01-xa-hpG">
+                                <rect key="frame" x="0.0" y="164" width="375" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-Sb-o7G">
+                                        <rect key="frame" x="24" y="10" width="327" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="China" translatesAutoresizingMaskIntoConstraints="NO" id="Kma-bF-xxC">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Kma-bF-xxC" secondAttribute="height" multiplier="1:1" id="twh-DC-Vu5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yuan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZQ-L2-NCM" userLabel="Yuan">
+                                                <rect key="frame" x="112" y="35" width="103" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-wJ-knQ" userLabel="YuanAmount" customClass="CurrencyTextField" customModule="CurrencyConverterNoTables" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="35" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="1eO-n1-aaA"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.50430757705479456" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jwf-Sb-o7G" firstAttribute="centerY" secondItem="e01-xa-hpG" secondAttribute="centerY" id="JV9-n0-Fx2"/>
+                                    <constraint firstAttribute="trailing" secondItem="jwf-Sb-o7G" secondAttribute="trailing" constant="24" id="ibi-k1-rw9"/>
+                                    <constraint firstAttribute="height" constant="120" id="oWw-kQ-gEl"/>
+                                    <constraint firstItem="jwf-Sb-o7G" firstAttribute="leading" secondItem="e01-xa-hpG" secondAttribute="leading" constant="24" id="z3g-G5-n6p"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ax-bg-lzI">
+                                <rect key="frame" x="0.0" y="284" width="375" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="J6W-UL-O0c">
+                                        <rect key="frame" x="24" y="10" width="327" height="100"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="1FO-yR-Nly">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1FO-yR-Nly" secondAttribute="height" multiplier="1:1" id="Bue-N7-M7v"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-Xd-fLf">
+                                                <rect key="frame" x="112" y="35" width="103" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpO-1J-MUh" userLabel="BitcoinAmount" customClass="CurrencyTextField" customModule="CurrencyConverterNoTables" customModuleProvider="target">
+                                                <rect key="frame" x="227" y="35" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="QIK-TA-CSW"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="J6W-UL-O0c" firstAttribute="centerY" secondItem="3ax-bg-lzI" secondAttribute="centerY" id="A9S-w5-cij"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6W-UL-O0c" secondAttribute="trailing" constant="24" id="D6H-tY-my6"/>
+                                    <constraint firstItem="J6W-UL-O0c" firstAttribute="leading" secondItem="3ax-bg-lzI" secondAttribute="leading" constant="24" id="UwB-DL-Z8q"/>
+                                    <constraint firstAttribute="height" constant="120" id="t1l-uN-Ocx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="tum-l2-a2r" secondAttribute="top" id="1vU-j5-IoN"/>
+                            <constraint firstItem="3ax-bg-lzI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CP8-cB-Wub"/>
+                            <constraint firstItem="tum-l2-a2r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="I1m-aZ-shW"/>
+                            <constraint firstItem="e01-xa-hpG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sex-bo-ZBL"/>
+                            <constraint firstItem="e01-xa-hpG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cj2-cC-seu"/>
+                            <constraint firstItem="e01-xa-hpG" firstAttribute="top" secondItem="tum-l2-a2r" secondAttribute="bottom" id="gfL-Y9-diA"/>
+                            <constraint firstItem="3ax-bg-lzI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l7P-Pd-XHh"/>
+                            <constraint firstItem="tum-l2-a2r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="na9-Au-CN5"/>
+                            <constraint firstItem="3ax-bg-lzI" firstAttribute="top" secondItem="e01-xa-hpG" secondAttribute="bottom" id="p8E-oq-wqR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BitcoinAmount" destination="gpO-1J-MUh" id="Bxb-Q2-1e4"/>
+                        <outlet property="USDAmount" destination="MYP-NI-ybH" id="cum-oG-nNg"/>
+                        <outlet property="YuanAmount" destination="eS3-wJ-knQ" id="ghy-wV-mh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bitcoin" width="100" height="100"/>
+        <image name="China" width="100" height="100"/>
+        <image name="US" width="100" height="100"/>
+    </resources>
+</document>
