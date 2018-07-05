@@ -12,7 +12,6 @@
 		42F191EB20ED44F3009FC4BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F191E920ED44F3009FC4BD /* Main.storyboard */; };
 		42F191ED20ED44FC009FC4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F191EC20ED44FC009FC4BD /* Assets.xcassets */; };
 		42F191F020ED44FC009FC4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F191EE20ED44FC009FC4BD /* LaunchScreen.storyboard */; };
-		42F191F820ED4EBB009FC4BD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F191F720ED4EBB009FC4BD /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		42F191EC20ED44FC009FC4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42F191EF20ED44FC009FC4BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42F191F120ED44FC009FC4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42F191F720ED4EBB009FC4BD /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +38,7 @@
 		42F191D920ED44F3009FC4BD = {
 			isa = PBXGroup;
 			children = (
-				42F191E420ED44F3009FC4BD /* CurrencyConverterNoTables */,
+				42F191E420ED44F3009FC4BD /* CurrencyConverter */,
 				42F191E320ED44F3009FC4BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,18 +51,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		42F191E420ED44F3009FC4BD /* CurrencyConverterNoTables */ = {
+		42F191E420ED44F3009FC4BD /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
 				42F191E520ED44F3009FC4BD /* AppDelegate.swift */,
 				42F191E720ED44F3009FC4BD /* ViewController.swift */,
 				42F191E920ED44F3009FC4BD /* Main.storyboard */,
-				42F191F720ED4EBB009FC4BD /* CurrencyTextField.swift */,
 				42F191EC20ED44FC009FC4BD /* Assets.xcassets */,
 				42F191EE20ED44FC009FC4BD /* LaunchScreen.storyboard */,
 				42F191F120ED44FC009FC4BD /* Info.plist */,
 			);
-			path = CurrencyConverterNoTables;
+			path = CurrencyConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42F191DD20ED44F3009FC4BD /* Build configuration list for PBXProject "CurrencyConverterNoTables" */;
+			buildConfigurationList = 42F191DD20ED44F3009FC4BD /* Build configuration list for PBXProject "CurrencyConverter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F191F820ED4EBB009FC4BD /* CurrencyTextField.swift in Sources */,
 				42F191E820ED44F3009FC4BD /* ViewController.swift in Sources */,
 				42F191E620ED44F3009FC4BD /* AppDelegate.swift in Sources */,
 			);
@@ -285,7 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CurrencyConverterNoTables/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CurrencyConverter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CurrencyConverterNoTables/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CurrencyConverter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42F191DD20ED44F3009FC4BD /* Build configuration list for PBXProject "CurrencyConverterNoTables" */ = {
+		42F191DD20ED44F3009FC4BD /* Build configuration list for PBXProject "CurrencyConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42F191F220ED44FC009FC4BD /* Debug */,
